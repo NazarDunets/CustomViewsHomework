@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">CustomViews-Dunets-L21</string>
+
+    <string name="price_arrangment">%s %s</string>
+    <string name="mock_title">The Baby Boss</string>
+    <string name="mock_category">Animation</string>
+    <string name="mock_currency">UAH</string>
+</resources>

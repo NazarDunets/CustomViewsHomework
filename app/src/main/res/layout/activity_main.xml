@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gdVerticalHalf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <com.example.customviews_dunets_l21.FanView
+        android:id="@+id/fanMain"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        app:layout_constraintBottom_toTopOf="@id/gdVerticalHalf"
+        app:layout_constraintEnd_toStartOf="@id/controllerMain"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.example.customviews_dunets_l21.FanControllerView
+        android:id="@+id/controllerMain"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        app:layout_constraintBottom_toTopOf="@id/gdVerticalHalf"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fanMain"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.example.customviews_dunets_l21.ProductCard
+        android:id="@+id/pcTest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:category="@string/mock_category"
+        android:rating="4.5"
+        android:src="@drawable/mock_image"
+        android:title="@string/mock_title"
+        app:currency="@string/mock_currency"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/gdVerticalHalf"
+        app:price="25.00" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

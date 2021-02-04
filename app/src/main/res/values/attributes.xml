@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ProductCard">
+
+        <attr name="android:src" format="reference" />
+        <attr name="android:title" format="string" />
+        <attr name="android:category" format="string" />
+        <attr name="android:rating" format="float" />
+        <attr name="currency" format="string" />
+        <attr name="price" format="float" />
+
+    </declare-styleable>
+
+</resources>
